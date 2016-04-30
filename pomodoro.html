@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro It!</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Megrim|Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="set-time">
+      <p>WORK</p>
+      <div class="under-work">
+          <button type="button" id="decWorkTime" onclick="changeTime('work', 'minus');">-</button>
+          <p id="work-time"></p>
+          <button type="button" id="incWorkTime" onclick="changeTime('work', 'plus');">+</button>
+    </div>
+    </div>
+    <div class="set-break">
+      <p>BREAK</p>
+      <div class="under-break">
+          <button type="button" id="decBreakTime" onclick="changeTime('break', 'minus');">-</button>
+          <p id="break-time"></p>
+          <button type="button" id="incBreakTime" onclick="changeTime('break', 'plus');">+</button>
+    </div>
+    </div>
+    <div></div>
+<!--
+    <div class="under-work">
+          <button type="button" id="decWorkTime" onclick="changeTime('work', 'minus');">-</button>
+          <p id="work-time"></p>
+          <button type="button" id="incWorkTime" onclick="changeTime('work', 'plus');">+</button>
+    </div>
+    <div class="under-break">
+          <button type="button" id="decBreakTime" onclick="changeTime('break', 'minus');">-</button>
+          <p id="break-time"></p>
+          <button type="button" id="incBreakTime" onclick="changeTime('break', 'plus');">+</button>
+    </div>
+-->
+    <div class="timer">
+      <ul>
+        <li id="js-time"></li>
+      </ul>
+      <button id="startStop" type="button" onclick="startStopTimer();">START</button>
+    </div>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+    <div id="circle4"></div>
+    <div id="about">
+      <a id="about-page" href="about.html" target="_blank">How does this timer work?</a>
+    </div>
+    <script src="pomodoro-script-v4.js"></script>
+  </body>
+</html>
